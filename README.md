@@ -8,6 +8,6 @@ file will contain the xml codes of screens.
 #### main/java/com/example/freelancer/
 file will contain the corresponding java codes
 ```diff
--we're note uploading the hole project, because our connection will suffer uploading unnecessary file (gradles ...).
+-we're not uploading the hole project, because our connection will suffer uploading unnecessary files (gradles ...).
 ```
 #### Thank you for your time.
