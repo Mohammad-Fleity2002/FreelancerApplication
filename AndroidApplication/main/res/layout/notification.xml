@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".notification">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iphone_13_p"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    >
+    <TextView
+        android:id="@+id/not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="@dimen/medium_text"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/text_border_purple"
+        android:layout_below="@id/not">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp">
+            <TextView
+                android:id="@+id/name_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/large_text"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/email_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@email"
+                android:textColor="@color/teal_700"
+                />
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="This is an amazing service.They have an excellent customer care They will always respond whenever you call them"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/fullStarnot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/full_star_icon"
+                />
+            <TextView
+                android:id="@+id/fullStarnot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/full_star_icon"
+                android:layout_toEndOf="@id/fullStarnot1"
+                />
+            <TextView
+                android:id="@+id/fullStarnot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/full_star_icon"
+                android:layout_toEndOf="@id/fullStarnot2"
+                />
+            <TextView
+                android:id="@+id/fullStarnot4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/full_star_icon"
+                android:layout_toEndOf="@id/fullStarnot3"
+                />
+            <TextView
+                android:id="@+id/fullStarnot5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/full_star_icon"
+                android:layout_toEndOf="@id/fullStarnot4"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout x`mlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".search">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".search"
+    >
+    <Spinner
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/serviceTypes"
+        android:background="@drawable/text_border_purple"
+        android:padding="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/small_margin"/>
+    <Spinner
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/serviceAreas"
+        android:layout_below="@id/serviceTypes"
+        android:background="@drawable/text_border_purple"
+        android:padding="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/x_small_margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/serviceAreas"
+        android:textColor="@color/red"
+        android:id="@+id/error"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/service1"
+        android:layout_below="@id/serviceAreas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:background="@drawable/text_border_purple"
+        android:padding="@dimen/medium_padding">
+
+        <TextView
+            android:id="@+id/freelancer_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:padding="@dimen/small_padding"
+            android:text="Ziad Helo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/service_title_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/freelancer_name_1"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="Carpenter"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/service_area_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_title_1"
+            android:layout_marginTop="1sp"
+            android:text="Achkout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/freelancer_phoneNb_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_area_1"
+            android:layout_marginTop="1sp"
+            android:text="03263263"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/freelancer_email_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/freelancer_phoneNb_1"
+            android:layout_marginTop="1sp"
+            android:text="email@example@domain.com"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/service_1_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/freelancer_email_1"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:background="@drawable/edit_text_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/service_1_no_rate"/>
+            <TextView
+                android:id="@+id/service_1_star_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+
+            <TextView
+                android:id="@+id/service_1_star_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_1_star_1"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+            <TextView
+                android:id="@+id/service_1_star_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_1_star_2"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+
+            <TextView
+                android:id="@+id/service_1_star_4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_1_star_3"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+
+            <TextView
+                android:id="@+id/service_1_star_5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_1_star_4"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/back_arrow"
+        android:textSize="@dimen/large_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x_small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:layout_toLeftOf="@id/next"
+        android:id="@+id/previous"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:rotationY="180"
+        android:background="@drawable/back_arrow"
+        android:textSize="@dimen/large_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x_small_margin"
+        android:id="@+id/next"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/service2"
+        android:visibility="invisible"
+        android:layout_below="@id/service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:background="@drawable/text_border_purple"
+        android:padding="@dimen/medium_padding">
+
+        <TextView
+            android:id="@+id/freelancer_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_purple"
+            android:padding="@dimen/small_padding"
+            android:text="Ziad Helo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/service_title_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/freelancer_name_2"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="Carpenter"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/service_area_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_title_2"
+            android:layout_marginTop="1sp"
+            android:text="Achkout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/freelancer_phoneNb_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_area_2"
+            android:layout_marginTop="1sp"
+            android:text="03263263"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/freelancer_email_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/freelancer_phoneNb_2"
+            android:layout_marginTop="1sp"
+            android:text="email@example@domain.com"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/service_2_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_30"
+            android:layout_below="@id/freelancer_email_2"
+            android:layout_marginTop="@dimen/xx_small_margin"
+            android:background="@drawable/edit_text_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/service_2_no_rate"/>
+
+            <TextView
+                android:id="@+id/service_2_star_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+
+            <TextView
+                android:id="@+id/service_2_star_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_2_star_1"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+            <TextView
+                android:id="@+id/service_2_star_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_2_star_2"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+
+            <TextView
+                android:id="@+id/service_2_star_4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_2_star_3"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+
+            <TextView
+                android:id="@+id/service_2_star_5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/service_2_star_4"
+                android:visibility="invisible"
+                android:background="@drawable/full_star_icon"  />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer"
+        android:padding="@dimen/small_padding">
+
+        <Button
+            android:id="@+id/profileIcon"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/profile_icon" />
+
+        <Button
+            android:id="@+id/searchIcon"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileIcon"
+            android:background="@drawable/search_icon"
+            android:layout_marginStart="@dimen/medium_margin"/>
+
+        <Button
+            android:id="@+id/backIcon"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/searchIcon"
+            android:layout_marginLeft="40sp"
+            android:background="@drawable/back_arrow" />
+
+        <Button
+            android:id="@+id/logoutIcon"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backIcon"
+            android:layout_marginLeft="30sp"
+            android:background="@drawable/logout_icon"
+            android:backgroundTint="@color/purple"/>
+    </RelativeLayout>
+</RelativeLayout>
